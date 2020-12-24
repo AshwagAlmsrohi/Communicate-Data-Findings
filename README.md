@@ -1,12 +1,16 @@
 # Communicate-Data-Findings
 # Introduction
 This project is part of the Udacity Data Analyst Nano Degree Program and serves as practice for data visualization. This document explores a dataset containing information about Prosper's loan data. Prosper is America’s first marketplace lending platform, with over $9 billion in funded loans. This dataset contains 113,937 loans with 81 variables on each loan.
+# Data source
+Loan Data from Prosper
+https://s3.amazonaws.com/udacity-hosted-downloads/ud651/prosperLoanData.csv
+
 # Summary and Conclusion
 It seems that there are a lot of nulls for most of the variables in the dataset since I'm only interested to investigate some of the features from this dataset, I will subset the dataframe to extract the features of interest for my analysis and remove the nulls for this subset dataframe only
 After reading through the descriptions and definitions, I chose ['Term', 'LoanStatus', 'BorrowerRate', 'ProsperRating (Alpha)', 'ListingCategory (numeric)',
               'EmploymentStatus','DelinquenciesLast7Years', 'StatedMonthlyIncome', 'TotalProsperLoans',
               'LoanOriginalAmount','LoanOriginationDate', 'Recommendations', 'Investors','BorrowerAPR','ProsperScore',
-            'Occupation','EmploymentStatusDuration','IncomeRange' ]
+            'Occupation','IncomeRange' ]
 However by combining these variables I think we should be able to gather some interesting insights and better understanding our borrowers.
 
 # Variable Defintions
