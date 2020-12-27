@@ -6,12 +6,9 @@ Loan Data from Prosper
 https://s3.amazonaws.com/udacity-hosted-downloads/ud651/prosperLoanData.csv
 
 # Summary and Conclusion
-It seems that there are a lot of nulls for most of the variables in the dataset since I'm only interested to investigate some of the features from this dataset, I will subset the dataframe to extract the features of interest for my analysis and remove the nulls for this subset dataframe only
-After reading through the descriptions and definitions, I chose ['Term', 'LoanStatus', 'BorrowerRate', 'ProsperRating (Alpha)', 'ListingCategory (numeric)',
-              'EmploymentStatus','DelinquenciesLast7Years', 'StatedMonthlyIncome', 'TotalProsperLoans',
-              'LoanOriginalAmount','LoanOriginationDate', 'Recommendations', 'Investors','BorrowerAPR','ProsperScore',
-            'Occupation','IncomeRange' ]
-However by combining these variables I think we should be able to gather some interesting insights and better understanding our borrowers.
+In the exploration, I found that the borrower APR is negatively correlated with original loan amount. At different size of the loan amount, the APR has a large range, but the range of APR decrease with the increase of loan amount. The borrower APR also decreases with the increasingly better rating. Borrowers with the best Prosper ratings have the lowest APR. It means that the Prosper rating has a strong effect on borrower APR. Interestingly, the relationship between borrower APR and loan amount turns from negative to slightly positive when the Prosper ratings are increased from HR to A or better. This is may because people with A or AA ratings tend to borrow more money, increasting APR could prevent them borrow even more and maximize the profit. But people with lower ratings tend to borrow less money, decreasing APR could encourage them to borrow more. I also found that the borrower APR decrease with the increase of borrow term for people with HR-C raings. But for people with B-AA ratings, the APR increase with the increase of borrow term.
+
+Outside of the main variables of interest, I found that the loan amount is positively correlated with the stated monthly income, it makes sense since borrowers with more monthly income could loan more money. The loan amount is also increased with the increase of loan term. I also found that borrowers with better ratings have larger monthly income and loan amount. Employed, self-employed and full time borrowers have more monthly income and loan amount than part-time, retired and not employed borrowers. There is a interaction between categorical term and Prosper rating features.  For loan amount, there is a interaction between term and rating. With better Prosper rating, the loan amount of all  terms increases, the increase amplitude of loan amount between terms also becomes larger.
 
 # Variable Defintions
 Taken from our Prosper Loan Data - Columns Definitions.csv that was provided with the dataset I will now define the individual variables i have selected for my analysis:
@@ -42,5 +39,9 @@ Employed and full time employees have their mean salaries in higher range
 Majority of the borrowers are falling under prosper rating of B , irrespective of the income range
 The monthly income of borrowers are having higher values for employed, other and full time employment status
 with the prosper rating of AA, A and B
+
+For the presentation, I just focus on features that could affect the borrower APR, which are original loan amount, Prosper rating. I started by showing the distribution of borrower APR and loan amount variable. Then, I showed the relationship between APR vs. loan amount, as well as APR vs. rating. I also investigated the effect of rating on ralationship between APR and loan amount, as well as the effect of rating on relationship between borrower APR and term.
 We can also clearly observe that HR prosper rating applicants have higher interest rates
+
+
 To conclude this analysis , I say that the loan approval status is heavily dependent on the applicant's information on IncomeRange, and employment status.
