@@ -55,8 +55,9 @@ with the prosper rating of AA, A and B.
 - 2013 - 2014 Prosper Score follows a gradual transition from purple to yellow, investors seemed to have really adopted this risk rating.
 - 2011 onwards max APR has dropped from above 40% to slightly above 36% .
 - Top IncomeRange of all Borrowers are within $25,000-49,999.
-
-
-
+- Most of the borrower have a fairly low Prosper Score of 4 (custom risk score) while the majority of the customer have a score between 5-8. You can also see that even customers with the low risks score of 1 or 2 did get a loan from Prosper. Furthermore, not many borrowers received the highest score of 10.
+- The Income Range of the borrower seem not to have an impact on the outcome of the loan.
+- The majority (~50,000) of people who currenly has a loan are empolyed no matter what is their ProsperScore.
+- Plots also show that BorrowerRate has a negative relationship with LoanOriginalAmount and has a postive relationship with ProsperScore.
 
 To conclude this analysis , I say that the loan approval status is heavily dependent on the applicant's information on IncomeRange, and employment status.
