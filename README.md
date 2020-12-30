@@ -43,7 +43,7 @@ For the presentation, I mainly focused on the features that are impactful for ap
 
 
 # Key Insights for Presentation
--For Applicants with prosper ratings from AA to D have the higher loan amount with increased salary
+- For Applicants with prosper ratings from AA to D have the higher loan amount with increased salary
 Employed and full time employees have their mean salaries in higher range.
 - Irrespective of the income range
 The monthly income of borrowers are having higher values for employed, other and full time employment status
