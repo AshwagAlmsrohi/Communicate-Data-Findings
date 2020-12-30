@@ -52,7 +52,7 @@ with the prosper rating of AA, A and B.
 - Longer term loans have on average lower APR.
 - 2013 - 2014 Prosper Score follows a gradual transition from purple to yellow, investors seemed to have really adopted this risk rating.
 - 2011 onwards max APR has dropped from above 40% to slightly above 36% .
-- Top IncomeRange of all Borrowers are within $50,000-74,999 .
+- Top IncomeRange of all Borrowers are within $25,000-49,999.
 
 
 
