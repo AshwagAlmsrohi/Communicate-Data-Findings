@@ -39,6 +39,8 @@ EmploymentStatusDuration:The length in months of the employment status at the ti
 IncomeRange:The income range of the borrower at the time the listing was created.
 
 # Key Insights for the Presentation
+There are total of 113937 loans entries saved in the dataset and 81 attributes. Each loan contain information on the borrowered's background information and details regarding the loans.This analysis will focus on years between (2010 and 2013) and factors that are related to Prosper loans status (LoanStatus).
+
 For the presentation, I mainly focused on the features that are impactful for approval of loan status. So for this I looked at the distribution of each and every numeric and categorical variables and did all the necessary univariate, bivariate and multivariate analysis on selected variables.
 
 
