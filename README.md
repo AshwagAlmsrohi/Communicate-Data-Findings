@@ -6,9 +6,16 @@ Loan Data from Prosper
 https://s3.amazonaws.com/udacity-hosted-downloads/ud651/prosperLoanData.csv
 
 # Summary and Conclusion
-In the exploration, I found that the borrower APR is negatively correlated with original loan amount. At different size of the loan amount, the APR has a large range, but the range of APR decrease with the increase of loan amount. The borrower APR also decreases with the increasingly better rating. Borrowers with the best Prosper ratings have the lowest APR. It means that the Prosper rating has a strong effect on borrower APR. Interestingly, the relationship between borrower APR and loan amount turns from negative to slightly positive when the Prosper ratings are increased from HR to A or better. This is may because people with A or AA ratings tend to borrow more money, increasting APR could prevent them borrow even more and maximize the profit. But people with lower ratings tend to borrow less money, decreasing APR could encourage them to borrow more. I also found that the borrower APR decrease with the increase of borrow term for people with HR-C raings. But for people with B-AA ratings, the APR increase with the increase of borrow term.
+In the exploration,
+-The borrower APR is negatively correlated with original loan amount.
+-LoanStatus of all Borrowers are with current and completed state.
+-The range of APR decrease with the increase of loan amount .
+- Borrowers with the best Prosper ratings have the lowest APR.
+- EmploymentStatus of all Borrowers are with Employed State
+Majority of the loan applicants are from 50K to 75K range with emloyeed status.
+- Applicants with incomerange of 50K to 75K range have their prosper rating falling under AA, A, B and C.
+- With better Prosper rating, the loan amount of all terms increases, the increase amplitude of loan amount between terms also becomes larger.
 
-Outside of the main variables of interest, I found that the loan amount is positively correlated with the stated monthly income, it makes sense since borrowers with more monthly income could loan more money. The loan amount is also increased with the increase of loan term. I also found that borrowers with better ratings have larger monthly income and loan amount. Employed, self-employed and full time borrowers have more monthly income and loan amount than part-time, retired and not employed borrowers. There is a interaction between categorical term and Prosper rating features.  For loan amount, there is a interaction between term and rating. With better Prosper rating, the loan amount of all  terms increases, the increase amplitude of loan amount between terms also becomes larger.
 
 # Variable Defintions
 Taken from our Prosper Loan Data - Columns Definitions.csv that was provided with the dataset I will now define the individual variables i have selected for my analysis:
@@ -31,17 +38,23 @@ Occupation:The Occupation selected by the Borrower at the time they created the 
 EmploymentStatusDuration:The length in months of the employment status at the time the listing was created.
 IncomeRange:The income range of the borrower at the time the listing was created.
 
+# Key Insights for the Presentation
+For the presentation, I mainly focused on the features that are impactful for approval of loan status. So for this I looked at the distribution of each and every numeric and categorical variables and did all the necessary univariate, bivariate and multivariate analysis on selected variables.
+
+
 # Key Insights for Presentation
-
-Insights from the multivariate exploration data
-For Applicants with prosper ratings from AA to D have the higher loan amount with increased salary
-Employed and full time employees have their mean salaries in higher range
-Majority of the borrowers are falling under prosper rating of B , irrespective of the income range
+-For Applicants with prosper ratings from AA to D have the higher loan amount with increased salary
+Employed and full time employees have their mean salaries in higher range.
+- Irrespective of the income range
 The monthly income of borrowers are having higher values for employed, other and full time employment status
-with the prosper rating of AA, A and B
+with the prosper rating of AA, A and B.
+- LoanStatus of all Borrowers are with current and completed state.
+- Longer term loans have on average lower APR.
+- 2013 - 2014 Prosper Score follows a gradual transition from purple to yellow, investors seemed to have really adopted this risk rating.
+- 2011 onwards max APR has dropped from above 40% to slightly above 36% .
+- Top IncomeRange of all Borrowers are within $50,000-74,999 .
 
-For the presentation, I just focus on features that could affect the borrower APR, which are original loan amount, Prosper rating. I started by showing the distribution of borrower APR and loan amount variable. Then, I showed the relationship between APR vs. loan amount, as well as APR vs. rating. I also investigated the effect of rating on ralationship between APR and loan amount, as well as the effect of rating on relationship between borrower APR and term.
-We can also clearly observe that HR prosper rating applicants have higher interest rates
+
 
 
 To conclude this analysis , I say that the loan approval status is heavily dependent on the applicant's information on IncomeRange, and employment status.
